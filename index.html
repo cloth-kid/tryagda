@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Agda Online</title>
+        <link rel="stylesheet" href="css/codemirror.css" />
+        <link rel="stylesheet" href="cm/theme/blackboard.css" />
+        <link rel="stylesheet" href="css/menu.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="jquery.js"></script>
+        <script src="codemirror.js"></script>
+        <script src="cm/mode/haskell.js"></script>
+        <script src="cm/ext/active-line.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Agda Online</h1>
+            <ul id="menu" class="inline">
+                <li><a href="#void">Home</a></li>
+                <li><a href="#void">Learn</a></li>
+                <li class="active"><a href="index.html">Create</a></li>
+                <li><a href="#void">Explore</a></li>
+            </ul>
+        </header>
+        <div id="container">
+            <p id="error" class="red-bg hidden"><i>Something</i> went wrong</p>
+            <p id="success" class="green-bg hidden">Success</p>
+            <textarea id="editor">module Nat where&#10;&#10;-- Define the natural numbers (ℕ)!</textarea>
+            <p>
+                <a href="#void" id="compile" class="button">Compile</a>
+            </p>
+            <footer>
+                <ul class="inline" id="submenu">
+                    <li><a href="#void">Home</a></li>
+                    <li>·</li>
+                    <li><a href="#void">Learn</a></li>
+                    <li>·</li>
+                    <li><a href="index.html">Create</a></li>
+                    <li>·</li>
+                    <li><a href="#void">Explore</a></li>
+                </ul>
+                <ul class="inline divider">
+                    <li>
+                        <a href="http://templated.co">TEMPLATED</a>
+                        ×
+                        <a href="https://unsplash.com">Unsplash</a>
+                    </li>
+                    <li>
+                        Built with <span class="fa fa-heart"></span> by 
+                        <a href="https://github.com/cloth-kid" class="author">cloth<strong>kid</strong></a>
+                         and
+                        <a href="https://github.com/qwe2" class="author">qwe2</a>
+                        .
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

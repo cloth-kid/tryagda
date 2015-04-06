@@ -1,0 +1,56 @@
+﻿ul.inline {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 0;
+}
+
+ul.inline > li {
+    display: inline-block;
+}
+
+ul.inline > li + li {
+    margin-left: 10px;
+}
+
+ul.inline.divider > li {
+    width: 50%;
+    margin-left: 0;
+}
+
+ul.inline.divider > li:last-child {
+    text-align: right;
+}
+
+#menu {
+    padding: 0 40px 40px;
+}
+
+#menu > li + li {
+    margin-left: 5px;
+}
+
+#menu > li.active > a {
+    cursor: pointer;
+}
+
+#menu > li.active > a,
+#menu > li > a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+#menu > li > a {
+    padding: 0 20px;
+    line-height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    cursor: not-allowed;
+}
+
+#submenu {
+    margin-bottom: 10px;
+    display: inline-block;
+}
